@@ -1,57 +1,50 @@
 @extends('admin.master')
 @section('admin')
-<main id="main" class="main">
-    <div class="pagetitle">
-        <h1>Edit Informasi</h1>
-        <nav>
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="">Dashboard</a></li>
-                <li class="breadcrumb-item active">Edit</li>
-            </ol>
-        </nav>
-    </div>
+  <div class="container-xxl flex-grow-1 container-p-y">
+    <div class="card">
+      <h5 class="card-header">Edit Project</h5>
+      <div class="card-body">
+        <form action="{{ route('images.update', $editData->id) }}" method="POST" enctype="multipart/form-data">
+          @csrf
+          {{-- @method('PUT') --}}
+          <div class="mb-3">
+            <label for="deskripsi" class="form-label">Deskripsi <span style="color: red;">*</span></label>
+            <textarea class="form-control @error('deskripsi') is-invalid @enderror" id="deskripsi" name="deskripsi" rows="3" required>{{ old('deskripsi', $editData->deskripsi) }}</textarea>
+            @error('deskripsi')
+              <div class="invalid-feedback">
+                {{ $message }}
+              </div>
+            @enderror
+          </div>
 
-    <div class="card shadow mb-4">
-        <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Form Edit</h6>
-        </div>
-        <div class="card-body">
-            <form id="validate" method="POST" action="{{ route('images.update', $editData->id) }}" enctype="multipart/form-data">
-                @csrf
-                <div class="form-group">
-                    <label for="judul">Tahun</label>
-                    <input type="text" name="tahun" class="form-control" id="tahun" value="{{ $editData->tahun }}" required>
-                </div>
-                <div class="form-group">
-                    <label for="deskripsi">Deskripsi</label>
-                    <textarea name="deskripsi" class="form-control" id="deskripsi" rows="5" required>{{ $editData->deskripsi }}</textarea>
-                </div>
-                <div class="form-group">
-                    <label for="foto">Foto</label>
-                    <input type="file" name="foto" class="form-control-file" id="foto">
-                    <img src="{{ asset('storage/'.$editData->foto) }}" width="100px" alt="photo">
-                </div>
-                <button type="submit" class="btn btn-primary">Simpan</button>
-            </form>
-        </div>
+          <div class="mb-3">
+            <label for="tahun" class="form-label">Tahun <span style="color: red;">*</span></label>
+            <input type="number" class="form-control @error('tahun') is-invalid @enderror" id="tahun" name="tahun" value="{{ old('tahun', $editData->tahun) }}" required />
+            @error('tahun')
+              <div class="invalid-feedback">
+                {{ $message }}
+              </div>
+            @enderror
+          </div>
+
+          <div class="mb-3">
+            <label for="foto" class="form-label">Upload Gambar</label>
+            <div class="mb-3">
+              <img src="{{ asset('storage/'.$editData->foto) }}" alt="Current Project Image" class="img-thumbnail" width="150">
+            </div>
+            <input type="file" class="form-control @error('foto') is-invalid @enderror" id="foto" name="foto" accept="image/*" />
+            @error('foto')
+              <div class="invalid-feedback">
+                {{ $message }}
+              </div>
+            @enderror
+          </div>
+
+          <div class="mt-4">
+            <button type="submit" class="btn btn-primary">Save Project</button>
+          </div>
+        </form>
+      </div>
     </div>
-</main>
+  </div>
 @endsection
-
-@push('js')
-<script type="text/javascript">
-    $(document).ready(function() {
-        $("#validate").validate({
-            rules: {
-                tahun: { required: true },
-                deskripsi: { required: true },
-                foto: { required: false },
-            },
-            messages: {
-                tahun: { required: "Tahun harus diisi." },
-                deskripsi: { required: "Deskripsi harus diisi." },
-            },
-        });
-    });
-</script>
-@endpush
