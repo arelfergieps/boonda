@@ -36,8 +36,9 @@
             @endforeach
 
             <!-- Button to add images -->
-            <a class="btn btn-primary add-image-btn rounded-pill" href="{{ route('login') }}">Tambah Gambar</a>
+            
         </div>
+        <a class="btn btn-primary add-image-btn rounded-pill  mt-3" href="{{ route('login') }}">Tambah Gambar</a>
     </div>
 </section>
 
