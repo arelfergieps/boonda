@@ -33,13 +33,19 @@ class UserController extends Controller
             ->orderBy('tahun', 'asc') 
             ->limit(5) 
             ->get();
+        $years2 =
+        DB::table('images')
+            ->select('tahun')
+            ->distinct()
+            ->orderBy('tahun', 'asc')
+            ->get();
     
         $selectedYear = $request->query('year', $years->first()->tahun);
         $images = DB::table('images')
             ->where('tahun', $selectedYear)
             ->get();
     
-        return view('user.galleri', compact('years', 'images', 'selectedYear'));
+        return view('user.galleri', compact('years', 'images', 'selectedYear' ,'years2'));
     }
       
 

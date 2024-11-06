@@ -15,17 +15,26 @@ class ImageController extends Controller
     public function index(Request $request)
     {
         $tahun = $request->input('tahun');
+
+        // Menangkap parameter sorting
+        $sortBy = $request->input('sort_by', 'tahun'); // default sort by 'tahun'
+        $sortOrder = $request->input('sort_order', 'asc'); // default sort order 'asc'
+
+        $query = Image::query();
+
+        // Filter berdasarkan tahun jika ada
         if ($tahun) {
-            $data = Image::where('tahun', $tahun)->get();
-        } else {
-            $data = Image::all();
+            $query->where('tahun', $tahun);
         }
-    
+
+        // Menambahkan sorting ke query
+        $data = $query->orderBy($sortBy, $sortOrder)->get();
+
         $title = 'Delete Data!';
         $text = "Apakah Kamu Yakin Akan Menghapus Data Ini?";
         confirmDelete($title, $text);
-    
-        return view('admin.images.index', compact('data', 'tahun'));
+
+        return view('admin.images.index', compact('data', 'tahun', 'sortBy', 'sortOrder'));
     }
 
  
@@ -42,10 +51,12 @@ class ImageController extends Controller
     {
 
         $request->validate([
+            'nama' => 'required|string|max:255',
             'tahun' => 'required|string|max:255',
             'deskripsi' => 'required|string',
             'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
+       
 
         $data = new Image();
         if ($request->hasFile('foto')) {
@@ -56,6 +67,7 @@ class ImageController extends Controller
         }
         $data->deskripsi = $request->deskripsi;
         $data->tahun = $request->tahun;
+        $data->nama = $request->nama;
         $data->save();
     
         Alert::success('Success', 'Tambah data Berhasil!')->showConfirmButton('OK');
@@ -71,13 +83,24 @@ class ImageController extends Controller
 
         // Jika tahun ditentukan, filter berdasarkan tahun
         if ($tahun) {
-            $query->where('tahun', $tahun);
+            // Ambil tahun terakhir yang ada dalam database
+            $lastYear = Image::max('tahun');
+
+            // Jika tahun baru lebih besar dari tahun terakhir, ganti tahun terakhir dengan tahun baru
+            if ($tahun > $lastYear) {
+                // Menghapus tahun terakhir
+                Image::where('tahun', $lastYear)->delete();
+            }
+
+            // Tambahkan tahun baru ke database
+            Image::create(['tahun' => $tahun]); // Pastikan untuk menyesuaikan ini dengan model Anda
         }
 
         $images = $query->get();
 
         return view('user.galleri', compact('images'));
     }
+
 
     /**
      * Show the form for editing the specified resource.
@@ -101,10 +124,12 @@ class ImageController extends Controller
     
         // Validasi data yang diterima
         $request->validate([
+            'nama' => 'required|string|max:255',
             'tahun' => 'required|string|max:255',
             'deskripsi' => 'required|string',
             'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
+        
     
         // Hapus judul karena tidak ada di model
         // $data->judul = $request->judul;
@@ -118,6 +143,7 @@ class ImageController extends Controller
         }
     
         $data->deskripsi = $request->deskripsi;
+        $data->nama = $request->nama;
         $data->tahun = $request->tahun;
     
         $data->save();

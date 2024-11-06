@@ -1,7 +1,9 @@
 <x-guest-layout>
     <x-authentication-card>
+        
         <x-slot name="logo">
-            <x-authentication-card-logo />
+            <img src="{{ asset('user/imgs/logoboonda.png') }}" alt="Logo" class="w-40 h-20"> <!-- Ganti dengan logo kustom Anda -->
+       
         </x-slot>
 
         <x-validation-errors class="mb-4" />

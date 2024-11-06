@@ -2,22 +2,17 @@
 
 @section('user')
     <section class="header" id="home"
-        style="background-image: url('user/imgs/pattren2.png'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative; z-index: 1;">
+        style="background-image: url('user/imgs/homepage1.png'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative; z-index: 1;">
         <div class="container">
-            <!-- Konten di sini -->
-
-
-            <div class="infos">
-                <h1 class="subtitle"></h1>
-                <h6 class="title custom-title mb-2 ">Temukan Keceriaan Ciptakan Kenangan</h6>
-                <p class="small custom-desc"> Aplikasi yang memudahkan orang tua untuk mencari
+            <div class="infos" style="margin-top: -60px;">
+                <h6 class="title custom-title mb-3 ">Temukan Keceriaan <p class="title custom-title">Ciptakan Kenangan</p>
+                </h6>
+                <p class=" custom-desc"> Aplikasi yang memudahkan orang tua untuk mencari
                     dan mendaftar berbagai event edukatif, hiburan,
                     dan aktivitas keluarga yang ramah anak
                 </p>
             </div>
-            <div class="img-holder pb-5">
-                <img src="user/imgs/home1.png" alt="Man Image">
-            </div>
+
         </div>
         </div>
     </section>
@@ -30,7 +25,7 @@
                 <div
                     style="display: flex; justify-content: center; align-items: center; min-height: 50vh; flex-direction: column;">
                     <div class="pl-md-3 col-md-9 mt-2">
-                        <h6 class="title custom-title mb-3" style="font-size: 48px;">Profil Boonda Childcare</h6>
+                        <h6 class="title custom-title mb-3 mt-2" style="font-size: 48px;">Profil Boonda Childcare</h6>
                         <div class="video-card"
                             style="position: relative; max-width: 700px; margin-top: 20px; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); ; bor transition: transform 0.3s ease, box-shadow 0.3s ease; margin: 0 auto;">
                             <a href="https://youtu.be/3c3MXmkNgxg?si=kprdMz0WjVfVvrt-" target="_blank"
@@ -64,17 +59,22 @@
     <!-- Boonda.id Section -->
     <section id="Boonda" class="section">
         <div class="container">
-            <div class="card card-boonda  p-4 "style="border-radius: 20px; ">
+            <div class="card card-boonda  p-3 "style="border-radius: 20px; ">
                 <div class="row align-items-start" style="min-height: 100vh; ">
                     <!-- Bagian gambar di sebelah kiri -->
                     <div class="col-md-6 text-center d-flex flex-column justify-content-between">
-                        <img src="https://img.youtube.com/vi/3c3MXmkNgxg/maxresdefault.jpg" alt="Boonda Childcare"
-                            style="max-width: 100%; height: auto; border-radius: 20px; ">
+                        <div class="video-container"
+                            style="position: relative; padding-bottom: 56.25%; /* 16:9 Aspect Ratio */ height: 0; overflow: hidden; max-width: 100%; border-radius: 20px;">
+                            <iframe src="https://www.youtube.com/embed/CbBGoC3W3Q8" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 20px;"></iframe>
+                        </div>
                     </div>
 
                     <!-- Bagian teks di sebelah kanan -->
                     <div class="col-md-6">
-                        <h5 class="title mb-5 mt-3">Tentang Aplikasi Boonda</h5>
+                        <h5 class="title mb-3 mt-3">Tentang Aplikasi Boonda</h5>
 
                         <p> #1 Aplikasi Super Parenting. Solusi Pengasuhan Anak
                             yang TerintegrasiBoonda adalah platform yang
@@ -84,7 +84,7 @@
                         <p> Download Aplikasi Boonda:</p>
 
                         <!-- Tombol di bawah teks -->
-                        <div class="mt-1">
+                        <div class="">
                             <a href="https://apps.apple.com/id/app/boonda/id6446410047"
                                 class="btn btn-boonda rounded custom-btn">iOS</a>
                             <a href="https://play.google.com/store/apps/details?id=com.gti.boonda"
@@ -96,10 +96,11 @@
     </section>
 
     <!-- Katalog Section -->
-    <section id="katalog" class="section mt-5">
+    <section id="katalog"
+        class="section mt-5"style="background-image: url('user/imgs/Vector.png'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative; z-index: 1;">
         <div class="container text-center">
 
-            <h6 class="custom-titlegal ">Katalog</h6>
+            <h6 class="custom-titlegal mt-3">Event</h6>
 
             <!-- Buttons and Dropdown Section -->
             <div class="mb-4 d-flex justify-content-between flex-wrap">
@@ -169,180 +170,183 @@
             <div class="row text-left">
                 <!-- Card 1 -->
                 <div class="col-md-3 p-3">
-                    <div class="card border mb-4 " style="border-radius: 20px; ">
-                        <a class="card-body" href="{{ url('detailcard') }}">
-                        </a>
-                        <img src="assets/imgs/blog-1.jpg" alt="Design for Everyone"
-                            class="card-img-top w-100"style="border-radius: 20px;">
-                        <div class=" mb-2 p-2">
-                            <div class=" status small text-muted">sedang berlangsung</div>
-                            <div class="title">Jadi Pendongeng? Berani Dong!</div>
-                            <div class="info">
-                                <i class="bi-geo-alt"></i> Mojangangu Malang
-                                <br>
-                                <i class="bi-calendar"></i> 12 Agustus 2024
-                            </div>
-
-                            <a class="flex-fill mx-1" href="{{ url('detailcard') }}">Rp.100000 </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Card 2 -->
-                <div class="col-md-3 p-3">
-                    <div class="card border mb-4 " style="border-radius: 20px; ">
-                        <a class="card-body" href="{{ url('detailcard') }}">
-                        </a>
-                        <img src="assets/imgs/blog-2.jpg" alt="Design for Everyone"
-                            class="card-img-top w-100"style="border-radius: 20px;">
-                        <div class=" mb-2 p-2">
-                            <div class=" status small text-muted">sedang berlangsung</div>
-                            <div class="title">Jadi Pendongeng? Berani Dong!</div>
-                            <div class="info">
-                                <i class="bi-geo-alt"></i> Mojangangu Malang
-                                <br>
-                                <i class="bi-calendar"></i> 12 Agustus 2024
-                            </div>
-
-                            <a class="flex-fill mx-1" href="{{ url('detailcard') }}">Rp.100000 </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Card 3 -->
-                <div class="col-md-3 p-3">
-                    <div class="card border mb-4 " style="border-radius: 20px; ">
-                        <a class="card-body" href="{{ url('detailcard') }}">
-                        </a>
-                        <img src="assets/imgs/blog-3.jpg" alt="Design for Everyone"
-                            class="card-img-top w-100"style="border-radius: 20px;">
-                        <div class=" mb-2 p-2">
-                            <div class=" status small text-muted">sedang berlangsung</div>
-                            <div class="title">Jadi Pendongeng? Berani Dong!</div>
-                            <div class="info">
-                                <i class="bi-geo-alt"></i> Mojangangu Malang
-                                <br>
-                                <i class="bi-calendar"></i> 12 Agustus 2024
-                            </div>
-
-                            <a class="flex-fill mx-1" href="{{ url('detailcard') }}">Rp.100000 </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Card 4-->
-                <div class="col-md-3 p-3">
-                    <div class="card border mb-4 " style="border-radius: 20px; ">
-                        <a class="card-body" href="{{ url('detailcard') }}">
-                        </a>
-                        <img src="assets/imgs/blog-2.jpg" alt="Design for Everyone"
-                            class="card-img-top w-100"style="border-radius: 20px;">
-                        <div class=" mb-2 p-2">
-                            <div class=" status small text-muted">sedang berlangsung</div>
-                            <div class="title">Jadi Pendongeng? Berani Dong!</div>
-                            <div class="info">
-                                <i class="bi-geo-alt"></i> Mojangangu Malang
-                                <br>
-                                <i class="bi-calendar"></i> 12 Agustus 2024
-                            </div>
-
-                            <a class="flex-fill mx-1" href="{{ url('detailcard') }}">Rp.100000 </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Card 5 -->
-                <div class="col-md-3 p-3">
-                    <div class="card border mb-4 " style="border-radius: 20px; ">
-                        <a class="card-body" href="{{ url('detailcard') }}">
-                        </a>
-                        <img src="assets/imgs/blog-1.jpg" alt="Design for Everyone"
-                            class="card-img-top w-100"style="border-radius: 20px;">
-                        <div class=" mb-2 p-2">
-                            <div class=" status small text-muted">sedang berlangsung</div>
-                            <div class="title">Jadi Pendongeng? Berani Dong!</div>
-                            <div class="info">
-                                <i class="bi-geo-alt"></i> Mojangangu Malang
-                                <br>
-                                <i class="bi-calendar"></i> 12 Agustus 2024
-                            </div>
-
-                            <a class="flex-fill mx-1" href="{{ url('detailcard') }}">Rp.100000 </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Card 6 -->
-                <div class="col-md-3 p-3">
-                    <div class="card border mb-4 " style="border-radius: 20px; ">
-                        <a class="card-body" href="{{ url('detailcard') }}">
-                        </a>
-                        <img src="assets/imgs/blog-3.jpg" alt="Design for Everyone"
-                            class="card-img-top w-100"style="border-radius: 20px;">
-                        <div class=" mb-2 p-2">
-                            <div class=" status small text-muted">sedang berlangsung</div>
-                            <div class="title">Jadi Pendongeng? Berani Dong!</div>
-                            <div class="info">
-                                <i class="bi-geo-alt"></i> Mojangangu Malang
-                                <br>
-                                <i class="bi-calendar"></i> 12 Agustus 2024
-                            </div>
-
-                            <a class="flex-fill mx-1" href="{{ url('detailcard') }}">Rp.100000 </a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <!-- Card 7 -->
-                <div class="col-md-3 p-3">
-                    <a href="{{ url('detailcard') }}">
-                        <div class="card border mb-4 " style="border-radius: 20px; ">
-                            <a class="card-body">
-                            </a>
-                            <img src="assets/imgs/blog-2.jpg" alt="Design for Everyone"
-                                class="card-img-top w-100"style="border-radius: 20px;">
-                            <div class=" mb-2 p-2">
-                                <div class=" status small text-muted">sedang berlangsung</div>
+                    <div class="card border mb-4" style="border-radius: 20px;">
+                        <a href="{{ url('detailcard') }}" style="text-decoration: none; color: inherit;">
+                            <img src="user/imgs/blog-2.jpg" alt="Design for Everyone" class="card-img-top w-100"
+                                style="border-radius: 20px;">
+                            <div class="mb-2 p-2">
+                                <div class="status small text-muted"><i
+                                        class="bi bi-circle-fill text-primary icon-small mr-1"></i>sedang berlangsung</div>
                                 <div class="title">Jadi Pendongeng? Berani Dong!</div>
                                 <div class="info">
                                     <i class="bi-geo-alt"></i> Mojangangu Malang
                                     <br>
                                     <i class="bi-calendar"></i> 12 Agustus 2024
                                 </div>
-
-                                <a class="flex-fill mx-1" href="{{ url('detailcard') }}">Rp.100000 </a>
+                                <div class="flex-fill text-primary">Rp.100000</div>
                             </div>
-                        </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <!-- Card 2 -->
+                <div class="col-md-3 p-3">
+                    <div class="card border mb-4" style="border-radius: 20px;">
+                        <a href="{{ url('detailcard') }}" style="text-decoration: none; color: inherit;">
+                            <img src="user/imgs/blog-2.jpg" alt="Design for Everyone" class="card-img-top w-100"
+                                style="border-radius: 20px;">
+                            <div class="mb-2 p-2">
+                                <div class="status small text-muted"><i
+                                        class="bi bi-circle-fill text-primary icon-small mr-1"></i>sedang berlangsung</div>
+                                <div class="title">Jadi Pendongeng? Berani Dong!</div>
+                                <div class="info">
+                                    <i class="bi-geo-alt"></i> Mojangangu Malang
+                                    <br>
+                                    <i class="bi-calendar"></i> 12 Agustus 2024
+                                </div>
+                                <div class="flex-fill text-primary">Rp.100000</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <!-- Card 3 -->
+                <div class="col-md-3 p-3">
+                    <div class="card border mb-4" style="border-radius: 20px;">
+                        <a href="{{ url('detailcard') }}" style="text-decoration: none; color: inherit;">
+                            <img src="user/imgs/blog-2.jpg" alt="Design for Everyone" class="card-img-top w-100"
+                                style="border-radius: 20px;">
+                            <div class="mb-2 p-2">
+                                <div class="status small text-muted"><i
+                                        class="bi bi-circle-fill text-primary icon-small mr-1"></i>sedang berlangsung</div>
+                                <div class="title">Jadi Pendongeng? Berani Dong!</div>
+                                <div class="info">
+                                    <i class="bi-geo-alt"></i> Mojangangu Malang
+                                    <br>
+                                    <i class="bi-calendar"></i> 12 Agustus 2024
+                                </div>
+                                <div class="flex-fill text-primary">Rp.100000</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <!-- Card 4-->
+                <div class="col-md-3 p-3">
+                    <div class="card border mb-4" style="border-radius: 20px;">
+                        <a href="{{ url('detailcard') }}" style="text-decoration: none; color: inherit;">
+                            <img src="user/imgs/blog-2.jpg" alt="Design for Everyone" class="card-img-top w-100"
+                                style="border-radius: 20px;">
+                            <div class="mb-2 p-2">
+                                <div class="status small text-muted"><i
+                                        class="bi bi-circle-fill text-primary icon-small mr-1"></i>sedang berlangsung</div>
+                                <div class="title">Jadi Pendongeng? Berani Dong!</div>
+                                <div class="info">
+                                    <i class="bi-geo-alt"></i> Mojangangu Malang
+                                    <br>
+                                    <i class="bi-calendar"></i> 12 Agustus 2024
+                                </div>
+                                <div class="flex-fill text-primary">Rp.100000</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Card 5 -->
+                <div class="col-md-3 p-3">
+                    <div class="card border mb-4" style="border-radius: 20px;">
+                        <a href="{{ url('detailcard') }}" style="text-decoration: none; color: inherit;">
+                            <img src="user/imgs/blog-2.jpg" alt="Design for Everyone" class="card-img-top w-100"
+                                style="border-radius: 20px;">
+                            <div class="mb-2 p-2">
+                                <div class="status small text-muted"><i
+                                        class="bi bi-circle-fill text-primary icon-small mr-1"></i>sedang berlangsung</div>
+                                <div class="title">Jadi Pendongeng? Berani Dong!</div>
+                                <div class="info">
+                                    <i class="bi-geo-alt"></i> Mojangangu Malang
+                                    <br>
+                                    <i class="bi-calendar"></i> 12 Agustus 2024
+                                </div>
+                                <div class="flex-fill text-primary">Rp.100000</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Card 6 -->
+                <div class="col-md-3 p-3">
+                    <div class="card border mb-4" style="border-radius: 20px;">
+                        <a href="{{ url('detailcard') }}" style="text-decoration: none; color: inherit;">
+                            <img src="user/imgs/blog-2.jpg" alt="Design for Everyone" class="card-img-top w-100"
+                                style="border-radius: 20px;">
+                            <div class="mb-2 p-2">
+                                <div class="status small text-muted"><i
+                                        class="bi bi-circle-fill text-primary icon-small mr-1"></i>sedang berlangsung</div>
+                                <div class="title">Jadi Pendongeng? Berani Dong!</div>
+                                <div class="info">
+                                    <i class="bi-geo-alt"></i> Mojangangu Malang
+                                    <br>
+                                    <i class="bi-calendar"></i> 12 Agustus 2024
+                                </div>
+                                <div class="flex-fill text-primary">Rp.100000</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Card 7 -->
+                <div class="col-md-3 p-3">
+                    <div class="card border mb-4" style="border-radius: 20px;">
+                        <a href="{{ url('detailcard') }}" style="text-decoration: none; color: inherit;">
+                            <img src="user/imgs/blog-2.jpg" alt="Design for Everyone" class="card-img-top w-100"
+                                style="border-radius: 20px;">
+                            <div class="mb-2 p-2">
+                                <div class="status small text-muted"><i
+                                        class="bi bi-circle-fill text-primary icon-small mr-1"></i>sedang berlangsung</div>
+                                <div class="title">Jadi Pendongeng? Berani Dong!</div>
+                                <div class="info">
+                                    <i class="bi-geo-alt"></i> Mojangangu Malang
+                                    <br>
+                                    <i class="bi-calendar"></i> 12 Agustus 2024
+                                </div>
+                                <div class="flex-fill text-primary">Rp.100000</div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Card 8 -->
                 <div class="col-md-3 p-3">
-                    <div class="card  mb-4 " style="border-radius: 20px; ">
-                        <a class="card-body" href="{{ url('detailcard') }}">
-                        </a>
-                        <img src="assets/imgs/blog-1.jpg" alt="Design for Everyone"
-                            class="card-img-top w-100"style="border-radius: 20px;">
-                        <div class=" mb-2 p-2">
-                            <div class=" status small text-muted">sedang berlangsung</div>
-                            <div class="title">Jadi Pendongeng? Berani Dong!</div>
-                            <div class="info">
-                                <i class="bi-geo-alt"></i> Mojangangu Malang
-                                <br>
-                                <i class="bi-calendar"></i> 12 Agustus 2024
+                    <div class="card border mb-4" style="border-radius: 20px;">
+                        <a href="{{ url('detailcard') }}" style="text-decoration: none; color: inherit;">
+                            <img src="user/imgs/blog-2.jpg" alt="Design for Everyone" class="card-img-top w-100"
+                                style="border-radius: 20px;">
+                            <div class="mb-2 p-2">
+                                <div class="status small text-muted"><i
+                                        class="bi bi-circle-fill text-primary text-primary icon-small mr-1"></i>sedang
+                                    berlangsung</div>
+                                <div class="title">Jadi Pendongeng? Berani Dong!</div>
+                                <div class="info">
+                                    <i class="bi-geo-alt"></i> Mojangangu Malang
+                                    <br>
+                                    <i class="bi-calendar"></i> 12 Agustus 2024
+                                </div>
+                                <div class="flex-fill text-primary">Rp.100000</div>
                             </div>
-
-                            <a class="flex-fill mx-1" href="{{ url('detailcard') }}">Rp.100000 </a>
-                        </div>
+                        </a>
                     </div>
                 </div>
-
 
                 <div class="col text-center mt-4 ">
                     <a href="/katalog"class="btn btn-primary rounded-pill">Selengkapnya ...</a>
@@ -355,13 +359,19 @@
     <!-- Testmonial Section -->
     <section id="ulasan" class="section">
         <div class="container text-center">
-            <h6 class="custom-titlegal ">Testimonial</h6>
+            <h6 class="custom-titlegal mt-3">Testimonial</h6>
 
 
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <!-- Arrow buttons -->
-                <button id="prevBtn" class="btn-arrow btn-prev" class="active">&lt; </button>
-                <button id="nextBtn" class="btn-arrow btn-next" class="active">&gt;</button>
+                <button id="prevBtn" class="btn-arrow btn-prev active">
+                    <i class="bi bi-caret-left-fill"></i> <!-- Ikon untuk tombol sebelumnya -->
+                    
+                </button>
+                <button id="nextBtn" class="btn-arrow btn-next active">
+                    <i class="bi bi-caret-right-fill"></i> <!-- Ikon untuk tombol berikutnya -->
+                   
+                </button>
 
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -374,7 +384,7 @@
                     <div class="carousel-item active">
                         <div class="card testmonial-card border"style=" border-radius: 20px;">
                             <div class="card-body">
-                                <img src="assets/imgs/avatar-1.jpg" alt="">
+                                <img src="user/imgs/avatar-1.jpg" alt="">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nostrum voluptates
                                     in enim vel amet?</p>
                                 <h1 class="title">Emma Re</h1>
@@ -385,7 +395,7 @@
                     <div class="carousel-item">
                         <div class="card testmonial-card border"style="border-radius: 20px;">
                             <div class="card-body">
-                                <img src="assets/imgs/avatar-2.jpg" alt="">
+                                <img src="user/imgs/avatar-2.jpg" alt="">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nostrum voluptates
                                     in enim vel amet?</p>
                                 <h1 class="title">James Bert</h1>
@@ -396,7 +406,7 @@
                     <div class="carousel-item">
                         <div class="card testmonial-card border"style="border-radius: 20px;">
                             <div class="card-body">
-                                <img src="assets/imgs/blog-3.jpg" alt="">
+                                <img src="user/imgs/blog-3.jpg" alt="">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nostrum voluptates
                                     in enim vel amet?</p>
                                 <h1 class="title">helmi</h1>
@@ -407,7 +417,7 @@
                     <div class="carousel-item">
                         <div class="card testmonial-card border"style="border-radius: 20px;">
                             <div class="card-body">
-                                <img src="assets/imgs/blog-2.jpg" alt="">
+                                <img src="user/imgs/blog-2.jpg" alt="">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nostrum voluptates
                                     in enim vel amet?</p>
                                 <h1 class="title">sincan</h1>
@@ -418,7 +428,7 @@
                     <div class="carousel-item">
                         <div class="card testmonial-card "style="border-radius: 20px;">
                             <div class="card-body">
-                                <img src="assets/imgs/avatar-3.jpg" alt="">
+                                <img src="user/imgs/avatar-3.jpg" alt="">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nostrum voluptates
                                     in enim vel amet?</p>
                                 <h1 class="title">Michael Abra</h1>
@@ -455,32 +465,34 @@
 
     <!-- Gallery section. -->
 
-  <section id="galeri" class="section"
-    style="background: rgba(253, 217, 69, 1); padding: 10px 20px; background-size: cover; background-position: center; background-repeat: no-repeat; position: relative; z-index: 1; height: auto;">
-    <div class="container text-center">
-        <section>
-            <div style="display: flex; justify-content: center; align-items: center; min-height: 100vh; flex-direction: column;">
-                <div class="pl-md-6 col-md-9">
-                    <h6 class="custom-titlegal">Gallery</h6>
+    <section id="galeri" class="section"
+        style="background-image: url('user/imgs/pattren1.png'); padding: 10px 20px; background-size: cover; background-position: center; background-repeat: no-repeat; position: relative; z-index: 1; height: auto;">
+        <div class="container text-center">
+            <section>
+                <div
+                    style="display: flex; justify-content: center; align-items: center; min-height: 100vh; flex-direction: column;">
+                    <div class="pl-md-6 col-md-9">
+                        <h6 class="custom-titlegal">Gallery</h6>
 
-                    <!-- Galeri Foto -->
-                    <div class="gallery">
-                        @foreach ($images as $image)
-                            <div class="gallery-item">
-                                <img src="{{ asset('storage/' . $image->foto) }}" alt="Foto {{ $loop->index + 1 }}">
-                            </div>
-                        @endforeach
-                    </div>
+                        <!-- Galeri Foto -->
+                        <div class="gallery ">
+                            @foreach ($images as $image)
+                                <div class="gallery-item p-2">
+                                    <img src="{{ asset('storage/' . $image->foto) }}" alt="Foto {{ $loop->index + 1 }}">
+                                </div>
+                            @endforeach
+                        </div>
 
-                    <!-- Tombol Selengkapnya -->
-                    <div class="text-center mt-4">
-                        <a href="{{ route('user.galleri') }}" class="btn btn-primary rounded-pill">Selengkapnya ...</a>
+                        <!-- Tombol Selengkapnya -->
+                        <div class="text-center mt-4">
+                            <a href="{{ route('user.galleri') }}" class="btn btn-primary rounded-pill">Selengkapnya
+                                ...</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
-  </section>
+            </section>
+        </div>
+    </section>
 
     </div>
     </section>
