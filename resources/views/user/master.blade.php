@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="user/vendors/themify-icons/css/themify-icons.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
         rel="stylesheet">
-    <!-- Bootstrap + Steller main styles -->
+    <!--css -->
     <link rel="stylesheet" href="user/css/user.css">
 
 

@@ -1,4 +1,5 @@
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+  
     <div class="app-brand demo">
     <a href="index.html" class="app-brand-link">
         <span class="app-brand-logo demo">
@@ -16,30 +17,24 @@
     <div class="menu-inner-shadow"></div>
 
     <ul class="menu-inner py-1">
-      <li class="menu-item">
-        <a href="{{ route('admin.dashboard')}}" class="menu-link">
-          <i class="menu-icon tf-icons bx bx-home-smile"></i>
-          <div class="text-truncate" data-i18n="Tables">Dashboards</div>
-          <span class="badge rounded-pill bg-danger ms-auto">5</span>
-        </a>
-      </li>
+     
       <!-- Tables -->
       <li class="menu-item">
         <a href="{{ route('images.index')}}" class="menu-link">
-          <i class="menu-icon tf-icons bx bx-table"></i>
-          <div class="text-truncate" data-i18n="Tables">Tables</div>
+          <i class="menu-icon tf-icons bi bi-easel2-fill"></i>
+          <div class="text-truncate" data-i18n="Tables">Input Gambar</div>
         </a>
       </li>
       <!-- Data Tables -->
       
       <!-- Misc -->
-      <li class="menu-header small text-uppercase"><span class="menu-header-text">Misc</span></li>
-      <li class="menu-item">
+      <li class="menu-header small"><span class="menu-header-text">BoondaChildCare</span></li>
+      {{-- <li class="menu-item">
         <a
           href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
           target="_blank"
           class="menu-link">
-          <i class="menu-icon tf-icons bx bx-support"></i>
+          <i class="menu-icon tf-icons bi bi-easel2-fill"></i>
           <div class="text-truncate" data-i18n="Support">Support</div>
         </a>
       </li>
@@ -51,6 +46,6 @@
           <i class="menu-icon tf-icons bx bx-file"></i>
           <div class="text-truncate" data-i18n="Documentation">Documentation</div>
         </a>
-      </li>
+      </li> --}}
     </ul>
   </aside>

@@ -3,13 +3,13 @@
 
 <div class="container-xxl flex-grow-1 container-p-y">
   <div class="card">
-    <h5 class="card-header">Project Management</h5>
+    <h5 class="card-header">Gallery Boonda Childcare</h5>
     <div class="card-body">
       <form id="projectForm" class="mb-4" enctype="multipart/form-data">
         <input type="hidden" id="projectId" />
         <div class="row mb-3">
           <div class="col-auto">
-            <a href="{{ route('images.create') }}" class="btn btn-primary">Add Project</a>
+            <a href="{{ route('images.create') }}" class="btn btn-primary">Masukan gambar</a>
           </div>          
         </div>
       </form>
@@ -25,7 +25,7 @@
             </select>
         </div>
         <div class="col-auto">
-            <button type="submit" class="btn btn-secondary mt-3">Sort</button>
+            <button type="submit" class="btn btn-secondary mt-3">Pilah </button>
         </div>
         <input type="hidden" name="tahun" value="{{ request('tahun') }}"> <!-- Jika tahun ada di request, sertakan juga -->
     </div>

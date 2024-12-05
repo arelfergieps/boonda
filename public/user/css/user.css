@@ -5800,26 +5800,42 @@ input[type="button"].btn-block {
 
   justify-content: center;
   margin-top: 20px;
+  
+}
+.gallery-index {
+  flex: 1 1 calc(35% - 30px);
+  box-sizing: border-box;
+  border-radius: 10px;
+  max-width: calc(75% - 30px);
+  overflow: hidden;
+  position: relative;
+  /* Menjaga border tetap di luar gambar */
+}
+
+.gallery-index img {
+  width: 250px;
+  height: 250px;
+  border-radius: 25px;
+  border: 10px solid white;
+  object-fit: cover;
 }
 
 .gallery-item {
-  flex: 1 1 calc(33% - 30px);
-  /* Adjust the percentage for different column layouts */
-  box-sizing: border-box;
-  border-radius: 10px;
-  max-width: calc(33% - 30px);
-  /* Adjust the percentage for different column layouts */
-  box-shadow: #fff;
-  /* Remove this line if you want to remove the white shadow */
-  overflow: hidden;
-  /* This will hide the content that overflows the image */
-}
+  flex: 1 1 calc(35% - 30px);
+    box-sizing: border-box;
+    border-radius: 10px;
+    max-width: calc(75% - 30px);
+    overflow: hidden;
+    position: relative;
+    /* Menjaga border tetap di luar gambar */
+  }
 
 .gallery-item img {
-  width: 100%;
-  height: auto;
+  width: 350px;
+  height: 350px;
   border-radius: 25px;
   border: 10px solid white;
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
@@ -13560,12 +13576,82 @@ pre {
   box-shadow: 0 0 10px rgba(255, 122, 87, 0.5);
 }
 
+.custom-footer {
+      background-color: #ff6a8a;
+      background-image: url('user/imgs/Vector4.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding: 70px 0;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+        .custom-footer .footer-container {
+          max-width: 1200px;
+          margin: auto;
+        }
+    
+        .custom-footer h5 {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+    
+        .custom-footer ul li {
+          margin-bottom: 5px;
+        }
+                 .fot-title {
+                   font-weight: 700;
+                   /* Membuat teks lebih tebal */
+                   font-size: 18px;
+                   font-weight: bold;
+                   /* Menambahkan ukuran font */
+                   margin-bottom: 10px;
+                   /* Memberikan jarak bawah */
+                   color: #fff;
+                   /* Warna teks */
+                 }
+        
+                 ul li a {
+                   font-weight: 300;
+                   /* Normal font untuk isi teks */
+                   font-size: 12px;
+                   /* Ukuran lebih kecil dari judul */
+                 }
+               
+
+
+.footer-container {
+  max-width: 1200px;
+  /* Ukuran container */
+  margin: 0 auto;
+  /* Tengah */
+  height: 200px;
+  padding: 0 15px;
+  /* Padding kiri-kanan untuk responsif */
+}
+
+.social-item {
+  display: inline-block;
+  margin-right: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+.social-item i {
+  transition: color 0.3s ease;
+}
+
+.social-item i:hover {
+  color: #ffc0cb;
+  /* Warna saat di-hover */
+}
+
 .page-footer {
-  background: #fdd945;
+  background: auto;
 }
 
 .page-footer .row {
-  height: 100px;
+  height: auto;
 }
 
 .page-footer p {

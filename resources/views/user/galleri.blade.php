@@ -102,7 +102,7 @@
             <!-- Button to add images -->
             
         </div>
-        <a class="btn btn-primary add-image-btn rounded-pill  mt-3" href="{{ route('login') }}">Tambah Gambar</a>
+        <a class="btn btn-primary add-image-btn rounded-pill  mt-3" href="{{ route('images.index') }}">Tambah Gambar</a>
     </div>
 </section>
 
@@ -155,39 +155,78 @@ function filterImages(year) {
             }
         }
     </script>
-      <footer class="page-footer" style="background-color: #fdd945; padding: 40px 0; color: white;">
-            <div class="container">
-                <div class="row">
-                    <!-- Teks dan Sosial Media -->
-                    <div class="col-sm-6">
-                        <div style="display: flex; flex-direction: column; align-items: flex-start;">
-                            <!-- Teks -->
-                            <div style="margin-bottom: 20px;">
-                                <p style="margin: 0; font-size: 18px; font-weight: 600;">BoondaChildCare
-                                </p>
-                                <p style="font-size: 14px; color: #fff;">© 2023 Semua Hak Cipta Dilindungi.
-                                </p>
-                            </div>
-                            <!-- Sosial Media -->
-                            <div class="socials">
-                                <a class="social-item" href="https://boonda.id/index" style="margin-right: 20px;">
-                                    <i class="ti-google" style="font-size: 20px; color: #db4437;"></i>
-                                </a>
-                                <a class="social-item" href="https://www.instagram.com/boonda_id/"
-                                    style="margin-right: 20px;">
-                                    <i class="ti-instagram" style="font-size: 20px; color: #333;"></i>
-                                </a>
-                                <a class="social-item" href="https://x.com/boondaid/" style="margin-right: 20px;">
-                                    <i class="ti-twitter" style="font-size: 20px; color: #1da1f2;"></i>
-                                </a>
-                            </div>
-                        </div>
+    <footer class="custom-footer">
+    <div class="footer-container">
+        <div class="row">
+            <div class="col-sm-6 ">
+                <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                    <!-- Teks -->
+                    <div style="margin-bottom: 20px;">
+                        
+                         <img  src="user/imgs/boondaputih.png" alt="BoondaChildCare" style="max-width: 60%; height: auto;">
                     </div>
-                    <!-- Kosongkan kolom ini jika hanya ada satu kolom -->
-                    <div class="col-sm-6"></div>
+                    <!-- Sosial Media -->
+                    <div class="socials">
+                        <a href="https://boonda.id/index" style="margin-right: 20px;">
+                            <i class="bi bi-google" style="font-size: 20px; color: #fff;"></i>
+                        </a>
+                        <a  href="https://www.instagram.com/boonda_id/" style="margin-right: 20px;">
+                            <i class="bi bi-instagram" style="font-size: 20px; color: #fff;"></i>
+                        </a>
+                        <a href="https://x.com/boondaid/" style="margin-right: 20px;">
+                            <i class="bi bi-twitter" style="font-size: 20px; color: #fff;"></i>
+                        </a>
+                        <a href="https://x.com/boondaid/" style="margin-right: 20px;">
+                            <i class="bi bi-youtube" style="font-size: 20px; color: #fff;"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </footer>
+           <div class="col-sm-6">
+                <div style="display: flex; justify-content: space-between; color: #fff;">
+                    <!-- Section Learn More -->
+                    <div style="margin-right: 30px;">
+                        <h5 class="fot-title">Learn More</h5>
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li><a href="#" style="color: #fff; text-decoration: none;">About Lift</a></li>
+                            <li><a href="#" style="color: #fff; text-decoration: none;">Environment</a></li>
+                            <li><a href="#" style="color: #fff; text-decoration: none;">Jobs</a></li>
+                            <li><a href="#" style="color: #fff; text-decoration: none;">Privacy Policy</a></li>
+                            <li><a href="#" style="color: #fff; text-decoration: none;">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Section Pusat Dukungan -->
+                    <div style="margin-right: 30px;">
+                        <h5 class="fot-title">Pusat Dukungan</h5>
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li><a href="#" style="color: #fff; text-decoration: none;">Lift Tickets</a></li>
+                            <li><a href="#" style="color: #fff; text-decoration: none;">Season Passes</a></li>
+                            <li><a href="#" style="color: #fff; text-decoration: none;">Vacation Packages</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Section Kantor -->
+                    <div style="margin-right: 30px;">
+                        <h5 class="fot-title">Kantor</h5>
+                         <ul style="list-style: none; padding: 0; margin: 0;">
+                           <li><a href="#" style="color: #fff; text-decoration: none;">Jl. Borobudur Agung Tim. II/2<br>Malang, Jawa Timur</a></li>
+                            <li><a href="#" style="color: #fff; text-decoration: none;">+62 812-3447-4107</a></li>
+                            <li><a href="#" style="color: #fff; text-decoration: none;">contact@boonda.id</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; color: #fff; margin-top: 50px;">
+            © 2024 Boonda Childcare | All Rights Reserved
+        </div>
+    </div>
+        </div>
+    </div>
+</footer>
+
+
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>

@@ -94,10 +94,9 @@
                 </div>
             </div>
     </section>
-
     <!-- Katalog Section -->
     <section id="katalog"
-        class="section mt-5"style="background-image: url('user/imgs/Vector.png'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative; z-index: 1;">
+        class="section mt-5" style="background-image: url('user/imgs/Vector.png');  background-size: cover; background-position: center; background-repeat: no-repeat; position: relative; z-index: 1;">
         <div class="container text-center">
 
             <h6 class="custom-titlegal mt-3">Event</h6>
@@ -366,11 +365,11 @@
                 <!-- Arrow buttons -->
                 <button id="prevBtn" class="btn-arrow btn-prev active">
                     <i class="bi bi-caret-left-fill"></i> <!-- Ikon untuk tombol sebelumnya -->
-                    
+
                 </button>
                 <button id="nextBtn" class="btn-arrow btn-next active">
                     <i class="bi bi-caret-right-fill"></i> <!-- Ikon untuk tombol berikutnya -->
-                   
+
                 </button>
 
                 <!-- Indicators -->
@@ -475,21 +474,21 @@
                         <h6 class="custom-titlegal">Gallery</h6>
 
                         <!-- Galeri Foto -->
-                        <div class="gallery ">
+                        <div class="gallery">
                             @foreach ($images as $image)
-                                <div class="gallery-item p-2">
-                                    <img src="{{ asset('storage/' . $image->foto) }}" alt="Foto {{ $loop->index + 1 }}">
+                                <div class="gallery-index p-2">
+                                    <img src="{{ asset('storage/' . $image->foto) }}" alt="Foto {{ $loop->iteration }}">
                                 </div>
                             @endforeach
-                        </div>
+                            </div>
 
-                        <!-- Tombol Selengkapnya -->
-                        <div class="text-center mt-4">
-                            <a href="{{ route('user.galleri') }}" class="btn btn-primary rounded-pill">Selengkapnya
-                                ...</a>
+                            <!-- Tombol Selengkapnya -->
+                            <div class="text-center mt-4">
+                                <a href="{{ route('user.galleri') }}" class="btn btn-primary rounded-pill">Selengkapnya
+                                    ...</a>
+                            </div>
                         </div>
                     </div>
-                </div>
             </section>
         </div>
     </section>

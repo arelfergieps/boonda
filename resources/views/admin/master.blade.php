@@ -39,7 +39,10 @@
     <link rel="stylesheet" href="{{ asset('admin/vendor/libs/perfect-scrollbar/perfect-scrollbar.css')}}" />
     <link rel="stylesheet" href="{{ asset('admin/vendor/libs/apex-charts/apex-charts.css')}}" />
 
-    <!-- Page CSS -->
+
+    <!-- icon booatrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
 
     <!-- Helpers -->
     <script src="{{ asset('admin/vendor/js/helpers.js')}}"></script>

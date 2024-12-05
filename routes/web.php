@@ -29,7 +29,7 @@ Route::middleware([
     'verified',
 ])->group(function () {
 
-    Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+    Route::get('/dashboard', [ImageController::class, 'index'])->name('admin.dashboard');
     //CRUD BERITA
     Route::get('/imagesview', [ImageController::class, 'index'])->name('images.index');
     Route::get('/images_create', [ImageController::class, 'create'])->name('images.create');

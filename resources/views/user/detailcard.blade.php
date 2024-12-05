@@ -13,7 +13,7 @@
 
     <!-- font icons -->
     <link rel="stylesheet" href="user/vendors/themify-icons/css/themify-icons.css">
-    
+
     <!-- Bootstrap + Steller main styles -->
     <link rel="stylesheet" href="user/css/user.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -50,11 +50,11 @@
                             class="btn btn-primary rounded">Kembali</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link text-white btn-primary rounded-pill d-flex align-items-center"
-                        href="https://boonda.id/index">
-                        <img src="user/imgs/boonda.png" alt="Boonda.id Logo" class="logo-img">
-                    </a>
-                </li>
+                        <a class="nav-link text-white btn-primary rounded-pill d-flex align-items-center"
+                            href="https://boonda.id/index">
+                            <img src="user/imgs/boonda.png" alt="Boonda.id Logo" class="logo-img">
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -193,7 +193,7 @@
         </div>
     </section>
 
-    <section id="maps" class="section mt-5">
+    <section id="maps" class="section ">
         <div class="container text-left">
             <h5 class="card-title custom-detail ">Lokasi</h5>
             <ul class="list-unstyled">
@@ -207,217 +207,272 @@
             </div>
         </div>
         </div>
-        <div class="container-detailcard">
-            <div class="title">Lorem Ipsum</div>
-            <div class="grid">
-                <div class="itemdetail">
-                    <div class="item-text">
-                        <p>Lorem ipsum</p>
-                        <div class="item-price">
-                            <p>Rp. 100.000</p>
-                            <p class="old-price">Rp. 150.000</p>
+        <section id="Pay" class="section ">
+            <div class="container-detailcard mt-5">
+                <div class="title">Lorem Ipsum</div>
+                <div class="grid">
+                    <div class="itemdetail">
+                        <div class="item-text">
+                            <p>Lorem ipsum</p>
+                            <div class="item-price">
+                                <p>Rp. 100.000</p>
+                                <p class="old-price">Rp. 150.000</p>
+                            </div>
+
                         </div>
-
-                    </div>
-                    <button class="btn-card btn-primary rounded-pill">Pesan</button>
-                </div>
-
-                <div class="itemdetail">
-                    <div class="item-text">
-                        <p>Lorem ipsum</p>
-                        <div class="item-price">
-                            <p>Rp. 100.000</p>
-                            <p class="old-price">Rp. 150.000</p>
-                        </div>
-
-                    </div>
-                    <button class="btn-card btn-primary rounded-pill">Pesan</button>
-                </div>
-
-                <div class="itemdetail">
-                    <div class="item-text">
-                        <p>Lorem ipsum</p>
-                        <div class="item-price">
-                            <p>Rp. 100.000</p>
-                            <p class="old-price">Rp. 150.000</p>
-                        </div>
-
-                    </div>
-                    <button class="btn-card btn-primary rounded-pill">Pesan</button>
-                </div>
-
-                <div class="itemdetail">
-                    <div class="item-text">
-                        <p>Lorem ipsum</p>
-                        <div class="item-price">
-                            <p>Rp. 100.000</p>
-                            <p class="old-price">Rp. 150.000</p>
-                        </div>
-
-                    </div>
-                    <button class="btn-card btn-primary rounded-pill">Pesan</button>
-                </div>
-
-                <div class="itemdetail">
-                    <div class="item-text">
-                        <p>Lorem ipsum</p>
-                        <div class="item-price">
-                            <p>Rp. 100.000</p>
-                            <p class="old-price">Rp. 150.000</p>
-                        </div>
-
-                    </div>
-                    <button class="btn-card btn-primary rounded-pill">Pesan</button>
-                    
-                </div>
-
-                <div class="itemdetail">
-                    <div class="item-text">
-                        <p>Lorem ipsum</p>
-                        <div class="item-price">
-                            <p>Rp. 100.000</p>
-                            <p class="old-price">Rp. 150.000</p>
-                        </div>
-                    </div>
-                    <button class="btn-card btn-primary rounded-pill">Pesan</button>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        
-            <div class="container text-center">
-
-                <h6 class="custom-detail text-left ">Event Lainnya</h6>
-
-                <!-- Buttons and Dropdown Section -->
-
-                <div class="row text-left">
-                    <!-- Card 1 -->
-                    <div class="col-md-3 p-3">
-                        <div class="card border mb-4" style="border-radius: 20px;">
-                            <a href="{{ url('detailcard') }}" style="text-decoration: none; color: inherit;">
-                                <img src="user/imgs/blog-2.jpg" alt="Design for Everyone"
-                                    class="card-img-top w-100" style="border-radius: 20px;">
-                                <div class="mb-2 p-2">
-                                    <div class="status small text-muted">sedang berlangsung</div>
-                                    <div class="title">Jadi Pendongeng? Berani Dong!</div>
-                                    <div class="info">
-                                        <i class="bi-geo-alt"></i> Mojangangu Malang
-                                        <br>
-                                        <i class="bi-calendar"></i> 12 Agustus 2024
-                                    </div>
-                                    <div class="flex-fill mx-1">Rp.100000</div>
-                                </div>
-                            </a>
-                        </div>
+                        <button class="btn-card btn-primary rounded-pill">Pesan</button>
                     </div>
 
+                    <div class="itemdetail">
+                        <div class="item-text">
+                            <p>Lorem ipsum</p>
+                            <div class="item-price">
+                                <p>Rp. 100.000</p>
+                                <p class="old-price">Rp. 150.000</p>
+                            </div>
 
-
-                    <!-- Card 2 -->
-                    <div class="col-md-3 p-3">
-                        <div class="card border mb-4" style="border-radius: 20px;">
-                            <a href="{{ url('detailcard') }}" style="text-decoration: none; color: inherit;">
-                                <img src="user/imgs/blog-2.jpg" alt="Design for Everyone"
-                                    class="card-img-top w-100" style="border-radius: 20px;">
-                                <div class="mb-2 p-2">
-                                    <div class="status small text-muted">sedang berlangsung</div>
-                                    <div class="title">Jadi Pendongeng? Berani Dong!</div>
-                                    <div class="info">
-                                        <i class="bi-geo-alt"></i> Mojangangu Malang
-                                        <br>
-                                        <i class="bi-calendar"></i> 12 Agustus 2024
-                                    </div>
-                                    <div class="flex-fill mx-1">Rp.100000</div>
-                                </div>
-                            </a>
                         </div>
+                        <button class="btn-card btn-primary rounded-pill">Pesan</button>
                     </div>
 
+                    <div class="itemdetail">
+                        <div class="item-text">
+                            <p>Lorem ipsum</p>
+                            <div class="item-price">
+                                <p>Rp. 100.000</p>
+                                <p class="old-price">Rp. 150.000</p>
+                            </div>
 
-
-                    <!-- Card 3 -->
-                    <div class="col-md-3 p-3">
-                        <div class="card border mb-4" style="border-radius: 20px;">
-                            <a href="{{ url('detailcard') }}" style="text-decoration: none; color: inherit;">
-                                <img src="user/imgs/blog-2.jpg" alt="Design for Everyone"
-                                    class="card-img-top w-100" style="border-radius: 20px;">
-                                <div class="mb-2 p-2">
-                                    <div class="status small text-muted">sedang berlangsung</div>
-                                    <div class="title">Jadi Pendongeng? Berani Dong!</div>
-                                    <div class="info">
-                                        <i class="bi-geo-alt"></i> Mojangangu Malang
-                                        <br>
-                                        <i class="bi-calendar"></i> 12 Agustus 2024
-                                    </div>
-                                    <div class="flex-fill mx-1">Rp.100000</div>
-                                </div>
-                            </a>
                         </div>
+                        <button class="btn-card btn-primary rounded-pill">Pesan</button>
                     </div>
 
+                    <div class="itemdetail">
+                        <div class="item-text">
+                            <p>Lorem ipsum</p>
+                            <div class="item-price">
+                                <p>Rp. 100.000</p>
+                                <p class="old-price">Rp. 150.000</p>
+                            </div>
 
-
-                    <!-- Card 4-->
-                    <div class="col-md-3 p-3">
-                        <div class="card border mb-4" style="border-radius: 20px;">
-                            <a href="{{ url('detailcard') }}" style="text-decoration: none; color: inherit;">
-                                <img src="user/imgs/blog-2.jpg" alt="Design for Everyone"
-                                    class="card-img-top w-100" style="border-radius: 20px;">
-                                <div class="mb-2 p-2">
-                                    <div class="status small text-muted">sedang berlangsung</div>
-                                    <div class="title">Jadi Pendongeng? Berani Dong!</div>
-                                    <div class="info">
-                                        <i class="bi-geo-alt"></i> Mojangangu Malang
-                                        <br>
-                                        <i class="bi-calendar"></i> 12 Agustus 2024
-                                    </div>
-                                    <div class="flex-fill mx-1">Rp.100000</div>
-                                </div>
-                            </a>
                         </div>
+                        <button class="btn-card btn-primary rounded-pill">Pesan</button>
                     </div>
 
-                    <div class="col text-center mt-4 ">
-                        <a href="/katalog"class="btn btn-primary rounded-pill">Selengkapnya ...</a>
+                    <div class="itemdetail">
+                        <div class="item-text">
+                            <p>Lorem ipsum</p>
+                            <div class="item-price">
+                                <p>Rp. 100.000</p>
+                                <p class="old-price">Rp. 150.000</p>
+                            </div>
+
+                        </div>
+                        <button class="btn-card btn-primary rounded-pill">Pesan</button>
+
+                    </div>
+
+                    <div class="itemdetail">
+                        <div class="item-text">
+                            <p>Lorem ipsum</p>
+                            <div class="item-price">
+                                <p>Rp. 100.000</p>
+                                <p class="old-price">Rp. 150.000</p>
+                            </div>
+                        </div>
+                        <button class="btn-card btn-primary rounded-pill">Pesan</button>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <footer class="page-footer" style="background-color: rgba(255, 106, 138, 1); padding: 40px 0; color: white; font-family: 'Poppins', sans-serif;">
-    <div class="container">
-        <div class="row">
-            <!-- Teks dan Sosial Media -->
-            <div class="col-sm-6">
-                <div style="display: flex; flex-direction: column; align-items: flex-start;">
-                    <!-- Teks -->
-                    <div style="margin-bottom: 20px;">
-                        <p style="margin: 0; font-size: 18px; font-weight: 600;">BoondaChildCare</p>
-                        <p style="font-size: 14px; color: #fff;">© 2023 Semua Hak Cipta Dilindungi.</p>
-                    </div>
-                    <!-- Sosial Media -->
-                    <div class="socials">
-                        <a class="social-item" href="https://boonda.id/index" style="margin-right: 20px;">
-                            <i class="ti-google" style="font-size: 20px; color: #db4437;"></i>
-                        </a>
-                        <a class="social-item" href="https://www.instagram.com/boonda_id/" style="margin-right: 20px;">
-                            <i class="ti-instagram" style="font-size: 20px; color: #333;"></i>
-                        </a>
-                        <a class="social-item" href="https://x.com/boondaid/" style="margin-right: 20px;">
-                            <i class="ti-twitter" style="font-size: 20px; color: #1da1f2;"></i>
-                        </a>
+
+
+
+            <section id="rekomendasi" class="section mt-5 ">
+                <div class="container text-center">
+
+                    <h6 class="custom-detail text-left mt-3 ">Event Lainnya</h6>
+
+                    <!-- Buttons and Dropdown Section -->
+
+                    <div class="row text-left">
+                        <!-- Card 1 -->
+                        <div class="col-md-3 p-3">
+                            <div class="card border mb-4" style="border-radius: 20px;">
+                                <a href="{{ url('detailcard') }}" style="text-decoration: none; color: inherit;">
+                                    <img src="user/imgs/blog-2.jpg" alt="Design for Everyone"
+                                        class="card-img-top w-100" style="border-radius: 20px;">
+                                    <div class="mb-2 p-2">
+                                        <div class="status small text-muted">sedang berlangsung</div>
+                                        <div class="title">Jadi Pendongeng? Berani Dong!</div>
+                                        <div class="info">
+                                            <i class="bi-geo-alt"></i> Mojangangu Malang
+                                            <br>
+                                            <i class="bi-calendar"></i> 12 Agustus 2024
+                                        </div>
+                                        <div class="flex-fill mx-1">Rp.100000</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Card 2 -->
+                        <div class="col-md-3 p-3">
+                            <div class="card border mb-4" style="border-radius: 20px;">
+                                <a href="{{ url('detailcard') }}" style="text-decoration: none; color: inherit;">
+                                    <img src="user/imgs/blog-2.jpg" alt="Design for Everyone"
+                                        class="card-img-top w-100" style="border-radius: 20px;">
+                                    <div class="mb-2 p-2">
+                                        <div class="status small text-muted">sedang berlangsung</div>
+                                        <div class="title">Jadi Pendongeng? Berani Dong!</div>
+                                        <div class="info">
+                                            <i class="bi-geo-alt"></i> Mojangangu Malang
+                                            <br>
+                                            <i class="bi-calendar"></i> 12 Agustus 2024
+                                        </div>
+                                        <div class="flex-fill mx-1">Rp.100000</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Card 3 -->
+                        <div class="col-md-3 p-3">
+                            <div class="card border mb-4" style="border-radius: 20px;">
+                                <a href="{{ url('detailcard') }}" style="text-decoration: none; color: inherit;">
+                                    <img src="user/imgs/blog-2.jpg" alt="Design for Everyone"
+                                        class="card-img-top w-100" style="border-radius: 20px;">
+                                    <div class="mb-2 p-2">
+                                        <div class="status small text-muted">sedang berlangsung</div>
+                                        <div class="title">Jadi Pendongeng? Berani Dong!</div>
+                                        <div class="info">
+                                            <i class="bi-geo-alt"></i> Mojangangu Malang
+                                            <br>
+                                            <i class="bi-calendar"></i> 12 Agustus 2024
+                                        </div>
+                                        <div class="flex-fill mx-1">Rp.100000</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Card 4-->
+                        <div class="col-md-3 p-3">
+                            <div class="card border mb-4" style="border-radius: 20px;">
+                                <a href="{{ url('detailcard') }}" style="text-decoration: none; color: inherit;">
+                                    <img src="user/imgs/blog-2.jpg" alt="Design for Everyone"
+                                        class="card-img-top w-100" style="border-radius: 20px;">
+                                    <div class="mb-2 p-2">
+                                        <div class="status small text-muted">sedang berlangsung</div>
+                                        <div class="title">Jadi Pendongeng? Berani Dong!</div>
+                                        <div class="info">
+                                            <i class="bi-geo-alt"></i> Mojangangu Malang
+                                            <br>
+                                            <i class="bi-calendar"></i> 12 Agustus 2024
+                                        </div>
+                                        <div class="flex-fill mx-1">Rp.100000</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col text-center mt-4 ">
+                            <a href="/katalog"class="btn btn-primary rounded-pill">Selengkapnya ...</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Kosongkan kolom ini jika hanya ada satu kolom -->
-            <div class="col-sm-6"></div>
-        </div>
-    </div>
-</footer>
+            </section>
+
+            <footer class="custom-footer">
+                <div class="footer-container">
+                    <div class="row">
+                        <div class="col-sm-6 ">
+                            <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                                <!-- Teks -->
+                                <div style="margin-bottom: 20px;">
+
+                                    <img src="user/imgs/boondaputih.png" alt="BoondaChildCare"
+                                        style="max-width: 60%; height: auto;">
+                                </div>
+                                <!-- Sosial Media -->
+                                <div class="socials">
+                                    <a href="https://boonda.id/index" style="margin-right: 20px;">
+                                        <i class="bi bi-google" style="font-size: 20px; color: #fff;"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/boonda_id/" style="margin-right: 20px;">
+                                        <i class="bi bi-instagram" style="font-size: 20px; color: #fff;"></i>
+                                    </a>
+                                    <a href="https://x.com/boondaid/" style="margin-right: 20px;">
+                                        <i class="bi bi-twitter" style="font-size: 20px; color: #fff;"></i>
+                                    </a>
+                                    <a href="https://x.com/boondaid/" style="margin-right: 20px;">
+                                        <i class="bi bi-youtube" style="font-size: 20px; color: #fff;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div style="display: flex; justify-content: space-between; color: #fff;">
+                                <!-- Section Learn More -->
+                                <div style="margin-right: 30px;">
+                                    <h5 class="fot-title">Learn More</h5>
+                                    <ul style="list-style: none; padding: 0; margin: 0;">
+                                        <li><a href="#" style="color: #fff; text-decoration: none;">About
+                                                Lift</a></li>
+                                        <li><a href="#"
+                                                style="color: #fff; text-decoration: none;">Environment</a></li>
+                                        <li><a href="#" style="color: #fff; text-decoration: none;">Jobs</a>
+                                        </li>
+                                        <li><a href="#" style="color: #fff; text-decoration: none;">Privacy
+                                                Policy</a></li>
+                                        <li><a href="#" style="color: #fff; text-decoration: none;">Contact
+                                                Us</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Section Pusat Dukungan -->
+                                <div style="margin-right: 30px;">
+                                    <h5 class="fot-title">Pusat Dukungan</h5>
+                                    <ul style="list-style: none; padding: 0; margin: 0;">
+                                        <li><a href="#" style="color: #fff; text-decoration: none;">Lift
+                                                Tickets</a></li>
+                                        <li><a href="#" style="color: #fff; text-decoration: none;">Season
+                                                Passes</a></li>
+                                        <li><a href="#" style="color: #fff; text-decoration: none;">Vacation
+                                                Packages</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Section Kantor -->
+                                <div style="margin-right: 30px;">
+                                    <h5 class="fot-title">Kantor</h5>
+                                    <ul style="list-style: none; padding: 0; margin: 0;">
+                                        <li><a href="#" style="color: #fff; text-decoration: none;">Jl.
+                                                Borobudur Agung Tim. II/2<br>Malang, Jawa Timur</a></li>
+                                        <li><a href="#" style="color: #fff; text-decoration: none;">+62
+                                                812-3447-4107</a></li>
+                                        <li><a href="#"
+                                                style="color: #fff; text-decoration: none;">contact@boonda.id</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="text-align: center; color: #fff; margin-top: 50px;">
+                        © 2024 Boonda Childcare | All Rights Reserved
+                    </div>
+                </div>
+                </div>
+                </div>
+            </footer>
+
+
 
 </body>
 
